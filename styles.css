@@ -267,3 +267,76 @@ body {
 }
 
 /* Footer */
+.socialWrapper { 
+    padding: 0px 5%;
+display: block; 
+text-align: center; 
+color: #fff; 
+letter-spacing: 2px; 
+        text-shadow: 1px 1px #222; 
+       -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; 
+-o-transition: all 0.2s ease-out; 
+transition: all 0.2s ease-out; 
+}
+
+.socialWrapper h4 { 
+font-size: 24px; 
+}
+
+ul.social { list-style: none; display: inline; margin: 0px 5px; padding: 0; }
+.social li { float: right; padding: 2px; }
+.social li a { color: #e2e2e2; margin-right: 10px; }
+.hide { display: none;  margin-left: 70%; }
+.socialActive1 { background: #4267B2; }
+.socialActive2 { background: #222222; }
+.socialActive3 { background: #0e76a8; }
+.socialActive4 { background: #00aff0; }
+.socialWrapper .default { display: block; }
+.socialWrapper.socialActive1 .default, .socialWrapper.socialActive2 .default, .socialWrapper.socialActive3 .default, .socialWrapper.socialActive4 .default, .socialWrapper.socialActive5 .default { display: none; }
+.socialWrapper.socialActive1 .head1, .socialWrapper.socialActive2 .head2, .socialWrapper.socialActive3 .head3, .socialWrapper.socialActive4 .head4, .socialWrapper.socialActive5 .head5 { display: block; }
+
+@media (max-width: 500px) {
+.sticky {
+    background-color:#343a40!important;
+    padding: 20px;
+}
+
+.sticky ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.sticky a {
+    font-weight: 100;
+    font-size: 18px;
+    color: rgb(255, 255, 255)
+}
+
+.sticky .nav-item a:hover {
+    font-weight: 200;
+    color: #000000;
+                }
+.description {
+        position: absolute;
+        font-weight: bold;
+        top: 20%;
+        margin: 10px;
+        padding: 1rem;
+        color: rgb(44, 36, 36);
+        text-shadow: 2px 2px 2px rgb(182, 170, 170), 0 0 2em rgb(173, 126, 126);
+        
+    }
+    .description h3 {
+        font-size: 150%;
+       
+       }
+    .description p{
+        color: #292323;
+        font-size: 75%;
+        /* width: 50%; */
+        line-height: 1.5;
+        padding-top: 10px;
+      }    
+}
