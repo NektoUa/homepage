@@ -10,7 +10,7 @@ const hello = () => {
 document.querySelector("#part-day").innerHTML = hello();
 
 
-let socialWrapper = document.querySelector(".socialWrapper")
+let socialWrapper = document.querySelector(".socialWrapper");
 
 function mouseIn(value) {
     let targetId = value.srcElement.id;
@@ -25,11 +25,28 @@ function mouseOut(value) {
     socialWrapper.classList.remove("socialActive" + targetId);
 }
 
-document.querySelectorAll(".social li a").forEach((item, i) => {
+let socialLiA = document.querySelectorAll(".social li a");
+socialLiA.forEach((item, i) => {
     item.addEventListener("mouseover", mouseIn)
-})
-document.querySelectorAll(".social li a").forEach((item, i) => {
+});
+socialLiA.forEach((item, i) => {
     item.addEventListener("mouseout", mouseOut)
-})
+});
+
+let avatar = document.querySelector(".contact-info__avatar");
+let header = document.querySelector(".change");
+
+function againMe() {
+    avatar.src = "./assets/my_avatar.jpg";
+    header.innerHTML = "I'm Illia";
+}
+
+function bulka() {
+    avatar.src = "./assets/avatar.jpg";
+    header.innerHTML = "I'm Bulka";
+    setTimeout(againMe, 300);
+}
+
+avatar.addEventListener("mouseover", bulka);
 
 
