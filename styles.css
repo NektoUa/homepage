@@ -74,6 +74,9 @@ body {
 }
 
 /* Contact styles */
+.header {
+    padding-bottom: 1rem;;
+}
 .contact-info__header,
   .contact-info__sub-header {
       text-align: center;
@@ -279,6 +282,20 @@ body {
 .page-footer {
     border-radius: 15px 15px 0px 0px;
 }
+
+@media screen and (max-width: 576px) {
+    .socialWrapper {
+        align-items: center;
+    }
+}
+
+.num{
+    font-family: 'Righteous', cursive;
+    font-size: 1.5rem;
+    color: rgb(247, 233, 233);
+    text-align: left;
+}
+
 .socialWrapper { 
     padding: 0px 5%;
 display: block; 
